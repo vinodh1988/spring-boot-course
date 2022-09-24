@@ -5,19 +5,22 @@ public class Student {
 	private int sno; //it is must practice to make your data members private
     private	String name;
     private String city;
+    private  static int count;
     //constructor overloading is polymorphism
     
     public Student() {
-    	sno=-1;
+    	sno=++count;
     	name="Noname";
     	city="Nocity";
+    	count++;
     }
     
     public Student(int sno,String name,String city) {
     	//this refers to current object
-    	this.sno=sno;
+    	this.sno=++count;
     	this.name=name;
     	this.city=city;
+    	
     }
    //method overloading is also polymorphism
     
@@ -41,6 +44,9 @@ public class Student {
     	System.out.println("City:"+city);
     }
 
+    public static void getCount() {
+    	System.out.println("Students count >> "+count);
+    }
 }
 
 
