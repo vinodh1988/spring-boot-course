@@ -27,6 +27,12 @@ public class InterfaceDemo {
 			
 		};
 		a.task();
+		
+		a=()->{
+			System.out.println("Lambda Expression");
+		};
+		
+		a.task();
 	}
 
 }

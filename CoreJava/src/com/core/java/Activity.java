@@ -6,5 +6,5 @@ public interface Activity {
 
 /*
   Interface is a collection of abstract methodsL
-  
+  an interface with only one method is called as functional interface
 */
