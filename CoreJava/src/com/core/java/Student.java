@@ -47,6 +47,10 @@ public class Student {
     public static void getCount() {
     	System.out.println("Students count >> "+count);
     }
+    
+    public String toString() {
+    	return "Sno: "+sno+" Name: "+name+" City: "+city;
+    }
 }
 
 
