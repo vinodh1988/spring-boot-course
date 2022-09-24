@@ -10,6 +10,12 @@ public class FirstRun {
       s=new Student();//new Student() is the object created using constructor
       s.display();
       //s.sno; error as it is private
+      s.setStudent(1,"Ram","Chennai");
+      s.display();
+      Student p=new Student(2,"Ravi","Chennai");
+      p.display();
+      p.setStudent("Rohan");
+      p.display();
 	}
 
 }
